@@ -1,0 +1,25 @@
+{
+  "name": "apple-store-stock",
+  "version": "1.0.0",
+  "description": "check apple product stock in your region",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "apple"
+  ],
+  "author": "steven",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "dependencies": {
+    "axios": "^0.24.0",
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "pm2": "^5.1.2",
+    "validatorjs": "^3.22.1"
+  }
+}
