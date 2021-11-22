@@ -4,8 +4,6 @@ const instance = axios.create({
   baseURL: 'https://www.apple.com',
 });
 const hitToApple = (data, store) => {
-  console.log('instance data: ', data);
-  console.log('instance store: ', store);
   return instance({
     method: 'GET',
     url: `/${store}/shop/fulfillment-messages?pl=${data.pl}&mt=${data.mt}&parts.0=${data.model}&location=${data.postalCode}`,
