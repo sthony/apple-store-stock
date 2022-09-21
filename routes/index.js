@@ -8,10 +8,10 @@ router.get('/healthcheck', function(req, res, next) {
   });
 });
 
-router.get('*', (req, res) => {
-  return res.status(404).json({
-    message: 'wrong route',
-  });
-});
+// router.get('*', (req, res) => {
+//   return res.status(404).json({
+//     message: 'wrong route',
+//   });
+// });
 
 module.exports = router;

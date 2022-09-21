@@ -26,5 +26,11 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/v1/check-stock', stockRouter);
 
+app.get('*', (req, res) => {
+  return res.status(404).json({
+    message: 'wrong route',
+  });
+});
+
 module.exports = app;
 
